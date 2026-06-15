@@ -40,8 +40,12 @@ const AboutMe = () => {
               <span className={s.span}>video editing</span>, and modern digital
               projects.
             </p>
-            <a className={s.cv} href="" download={"/icons8-github-logo-64.png"}>
-              <img src="/icons/Download.svg" alt="Download" />
+
+            <a
+              href="/Professional CV Resume (4).pdf"
+              download="CV.pdf"
+              className={s.cv}
+            >
               Download CV
             </a>
           </div>

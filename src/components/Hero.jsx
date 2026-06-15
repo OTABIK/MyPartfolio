@@ -82,10 +82,11 @@ const Hero = () => {
             <a href="#contactMe" className={s.btn}>
               Hire Me
             </a>
+
             <a
+              href="/Professional CV Resume (4).pdf"
+              download="CV.pdf"
               className={s.downLoad}
-              href=""
-              download={<img src="/myHero.png" alt="myHero" />}
             >
               Download CV
             </a>

@@ -1,6 +1,5 @@
 .nav {
   margin: 0 auto;
-  margin-top: clamp(1rem, 0.214rem + 3.93vw, 3.75rem);
 
   .container {
     max-width: 1440px;
