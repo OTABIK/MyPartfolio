@@ -1,0 +1,125 @@
+.aboutMe {
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: clamp(6.25rem, 5.357rem + 4.46vw, 9.375rem);
+
+  .container {
+    max-width: 1298px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-weight: 700;
+      font-size: clamp(1.5rem, 1.29rem + 1.05vw, 2.5rem);
+      letter-spacing: 0.03em;
+      color: var(--foundation--white-light);
+    }
+    .text {
+      font-weight: 500;
+      font-size: clamp(1rem, 0.948rem + 0.26vw, 1.25rem);
+      line-height: 160%;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      text-align: justify;
+      color: var(--foundation--white-dark-);
+      margin-bottom: 22px;
+    }
+
+    .mainInf {
+      max-width: 1298px;
+      width: 100%;
+      gap: clamp(2.125rem, 1.247rem + 4.39vw, 6.313rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+
+      @media (max-width: 1145px) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .foto {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .svg {
+          /* width=523 width=335 hight= 676px; hight=442px; */
+          width: clamp(20.938rem, 17.58rem + 16.79vw, 32.688rem);
+          height: clamp(27.625rem, 23.446rem + 20.89vw, 42.25rem);
+          position: absolute;
+          border-radius: 262px 262px 12px 12px;
+          background: rgba(255, 255, 255, 0.04);
+          z-index: -1000;
+        }
+        .img {
+          /* width=566px; width=395px; */
+          width: clamp(24.688rem, 22.84rem + 9.24vw, 33.5rem);
+        }
+      }
+
+      .block {
+        /* max-width: 631px;
+        width: 100%; */
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1.5rem, 1.29rem + 1.05vw, 2.5rem);
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @media (max-width: 1145px) {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .textAbout {
+          width: clamp(17.5rem, 11.232rem + 31.34vw, 39.438rem);
+          font-weight: 500;
+          font-size: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem);
+          line-height: 190%;
+          text-align: justify;
+          color: var(--foundation--white-dark-);
+
+          /* @media (max-width: 1024px) {
+            width: clamp(23.875rem, 20.218rem + 18.28vw, 41.313rem);
+            justify-content: center;
+            align-items: center;
+          } */
+
+          .span {
+            font-weight: 600;
+            text-decoration: underline;
+          }
+        }
+
+        .cv {
+          /* width: 224px; */
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          padding: 12px 30px;
+          background: linear-gradient(129deg, #fd6f00 0%, #e46400 100%);
+          transition: 0.5s;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 0.03em;
+          color: #fff;
+
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}

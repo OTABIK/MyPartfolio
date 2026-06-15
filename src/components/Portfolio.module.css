@@ -1,0 +1,104 @@
+.portfolio {
+  margin: 0 auto;
+  padding: 10px;
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+      letter-spacing: 0.03em;
+      text-align: justify;
+      color: var(--foundation--white-light);
+    }
+    .block {
+      max-width: 941px;
+      width: 100%;
+      display: flex;
+      gap: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
+      justify-content: center;
+      margin-top: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+      margin-bottom: clamp(2.125rem, 1.482rem + 3.21vw, 4.375rem);
+
+      @media (max-width: 1030px) {
+        display: none;
+      }
+
+      .btn {
+        border-radius: 8px;
+        padding: clamp(0.625rem, 0.554rem + 0.36vw, 0.875rem)
+          clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+        background: rgba(255, 255, 255, 0.08);
+        cursor: pointer;
+        transition: 0.5s;
+
+        font-weight: 700;
+        font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem);
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        text-align: justify;
+        color: #fff;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:active {
+          background: linear-gradient(129deg, #fd6f00 0%, #e46400 100%);
+        }
+      }
+    }
+    .box {
+      max-width: 1440px;
+      width: 100%;
+      padding: 0px 70px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 17px;
+      margin: 0 auto;
+
+      @media (max-width: 1030px) {
+        display: none;
+      }
+
+      .card {
+        width: clamp(17.75rem, 15.411rem + 11.7vw, 25.938rem);
+        display: flex;
+        border-radius: 28px 28px 16px 16px;
+        background: rgba(255, 255, 255, 0.08);
+        flex-wrap: wrap;
+        height: max-content;
+        margin: 0 auto;
+
+        .link {
+          padding: 16px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 160%;
+          letter-spacing: 0.03em;
+          text-transform: capitalize;
+          text-align: justify;
+          color: var(--foundation--white-normal-);
+          transition: 0.5s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .img {
+          border-radius: 28px 28px 0 0;
+          width: clamp(17.75rem, 15.411rem + 11.7vw, 25.938rem);
+        }
+      }
+    }
+  }
+}

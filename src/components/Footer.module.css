@@ -1,0 +1,113 @@
+.footer {
+  margin: 0 auto;
+
+  .container {
+    max-width: 1710px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+    background: rgba(255, 255, 255, 0.04);
+
+    .logo {
+      margin: 0 auto;
+      width: clamp(4rem, 3.893rem + 0.54vw, 4.375rem);
+    }
+    .links {
+      max-width: 663px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      gap: clamp(1.5rem, 0.857rem + 3.21vw, 3.75rem);
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .link {
+        font-weight: 500;
+        font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+        letter-spacing: 0.03em;
+        text-align: justify;
+        color: var(--foundation--white-darker);
+        transition: 0.5s;
+
+        &:hover {
+          color: var(--foundation--orange-normal);
+        }
+      }
+    }
+    .appLinks {
+      max-width: 220px;
+      width: 100%;
+      padding: 16px 0px 0px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      .link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--foundation--white-darker);
+        border-radius: 100%;
+        fill: rgba(255, 255, 255, 0.04);
+        stroke-width: 0.7px;
+        stroke: gray;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .contacts {
+      max-width: 592px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+      flex-wrap: wrap;
+
+      .email {
+        width: 351px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        font-weight: 700;
+        font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+        letter-spacing: 0.03em;
+        text-align: justify;
+        color: var(--foundation--white-dark-);
+      }
+
+      .phoneNumber {
+        width: 231px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        font-weight: 700;
+        font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+        letter-spacing: 0.03em;
+        text-align: justify;
+        color: var(--foundation--white-dark-);
+      }
+    }
+  }
+}
+
+/*  */

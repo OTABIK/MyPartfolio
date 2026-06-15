@@ -1,0 +1,243 @@
+.heero {
+  margin: 0 auto;
+  padding: 10px;
+  /* padding-top: 20px; */
+
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 30px;
+
+    @media (max-width: 1100px) {
+      padding: 60px 23px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .block {
+      max-width: 534px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      @media (max-width: 1100px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      .svg {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        right: 70px;
+        bottom: 200px;
+        z-index: -1000;
+        /* fill: var(--foundation--orange-normal);
+        stroke-width: 0px;
+        stroke: var(--foundation--black-normal);
+        filter: blur(80px); */
+
+        @media (max-width: 1100px) {
+          right: -10px;
+          bottom: 150px;
+        }
+      }
+
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+
+        .text {
+          font-family: var(--font-family);
+          font-weight: 600;
+          font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+          letter-spacing: 0.03em;
+          color: var(--foundation--white-dark-);
+        }
+        .overTitle {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: clamp(1.25rem, 1.107rem + 0.71vw, 1.75rem);
+          letter-spacing: 0.03em;
+          color: var(--foundation--white-dark);
+        }
+      }
+      .box2 {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.875rem, 0.821rem + 0.27vw, 1.063rem);
+        padding-bottom: clamp(2.5rem, 2.071rem + 2.14vw, 4rem);
+
+        @media (max-width: 1100px) {
+          align-items: center;
+          text-align: center;
+        }
+        .title {
+          font-family: var(--font-family);
+          font-weight: 900;
+          font-size: clamp(3.125rem, 2.768rem + 1.79vw, 4.375rem);
+          letter-spacing: 0.03em;
+          background: linear-gradient(
+            110deg,
+            #984300 0%,
+            #fd6f00 46.35%,
+            #ca5900 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @media (max-width: 640px) {
+            max-width: 300px;
+            width: 100%;
+          }
+          @media (max-width: 1100px) {
+            width: 614px;
+          }
+        }
+        .links {
+          max-width: 220px;
+          width: 100%;
+          padding: 16px 0px 0px;
+          display: flex;
+          gap: 20px;
+          align-items: flex-end;
+          justify-content: center;
+
+          @media (max-width: 768px) {
+            align-items: center;
+            text-align: center;
+          }
+
+          .link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--foundation--white-darker);
+            border-radius: 100%;
+            fill: rgba(255, 255, 255, 0.04);
+            stroke-width: 0.7px;
+            stroke: gray;
+            transition: 0.5s;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .box3 {
+        /* max-width: 389px; */
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 80px;
+
+        .btn {
+          border-radius: 8px;
+          padding: clamp(0.5rem, 0.429rem + 0.36vw, 0.75rem)
+            clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+          background: linear-gradient(129deg, #fd6f00 0%, #e46400 100%);
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem);
+          letter-spacing: 0.03em;
+          text-align: justify;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+        .downLoad {
+          /* max-width: 219px;
+          width: 229px; */
+          border: 2px solid var(--foundation--white-dark-);
+          border-radius: 8px;
+          padding: clamp(0.5rem, 0.429rem + 0.36vw, 0.75rem)
+            clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem);
+          letter-spacing: 0.03em;
+          text-align: justify;
+          color: var(--foundation--white-dark-);
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+      }
+      .box4 {
+        max-width: 534px;
+        width: 100%;
+        border-radius: 8px;
+        padding: clamp(1rem, 0.895rem + 0.52vw, 1.5rem);
+        display: flex;
+        gap: clamp(0.875rem, 0.665rem + 1.05vw, 1.875rem);
+        background: rgba(255, 255, 255, 0.04);
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        /* @media (max-width: 584px) {
+          max-width: 543px;
+        } */
+
+        .tabletInf {
+          width: clamp(6.688rem, 6.124rem + 2.82vw, 9.375rem);
+          height: 87px;
+          border-right: 1px solid var(--foundation--white-dark-);
+          padding: 6px clamp(1rem, 0.817rem + 0.92vw, 1.875rem) 6px 0px;
+          display: flex;
+          gap: 12px;
+          flex-direction: column;
+          /* justify-content: space-between; */
+
+          &:nth-of-type(3) {
+            border: none;
+          }
+
+          .number {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: clamp(1.25rem, 1.198rem + 0.26vw, 1.5rem);
+            letter-spacing: 0.03em;
+            text-align: justify;
+            color: var(--foundation--orange-normal);
+          }
+
+          .text {
+            max-width: 135px;
+            width: 100%;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: clamp(0.875rem, 0.796rem + 0.39vw, 1.25rem);
+            letter-spacing: 0.03em;
+            text-align: justify;
+            color: var(--foundation--white-normal-);
+          }
+        }
+      }
+    }
+
+    .img {
+      width: clamp(23.875rem, 19.661rem + 21.07vw, 38.625rem);
+    }
+  }
+}

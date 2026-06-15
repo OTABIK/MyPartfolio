@@ -1,0 +1,59 @@
+.burger {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  min-height: 100dvh;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1000;
+
+  &.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  .block {
+    max-width: 300px;
+    width: 100%;
+    background-color: #fd6f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+      width: 25px;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      color: var(--foundation--grey-dark);
+
+      .link {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: var(--foundation--grey-dark);
+      }
+    }
+  }
+}

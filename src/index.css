@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --foundation--orange-light: #fff1e6;
+  --foundation--orange-light-: #ffe9d9;
+  --foundation--orange-light-: #fed2b0;
+  --foundation--orange-normal: #fd6f00;
+  --foundation--orange-normal-: #e46400;
+  --foundation--orange-normal-: #ca5900;
+  --foundation--orange-dark: #be5300;
+  --foundation--orange-dark-: #984300;
+  --foundation--orange-dark-: #723200;
+  --foundation--orange-darker: #592700;
+  --foundation--black-light: #e6e6e6;
+  --foundation--black-light-: #d9d9d9;
+  --foundation--black-light-: #b0b0b0;
+  --foundation--black-normal: #000;
+  --foundation--black-normal-: #000;
+  --foundation--black-normal-: #000;
+  --foundation--black-dark: #000;
+  --foundation--black-dark-: #000;
+  --foundation--black-dark-: #000;
+  --foundation--black-darker: #000;
+  --foundation--white-light: #fefefe;
+  --foundation--white-light-: #fefefe;
+  --foundation--white-light-: #fdfdfd;
+  --foundation--white-normal: #f8f8f8;
+  --foundation--white-normal-: #dfdfdf;
+  --foundation--white-normal-: #c6c6c6;
+  --foundation--white-dark: #bababa;
+  --foundation--white-dark-: #959595;
+  --foundation--white-dark-: #707070;
+  --foundation--white-darker: #575757;
+  --foundation--grey-light: #e9e9e9;
+  --foundation--grey-light-: #ddd;
+  --foundation--grey-light-: #b9b9b9;
+  --foundation--grey-normal: #1e1e1e;
+  --foundation--grey-normal-: #1b1b1b;
+  --foundation--grey-normal-: #181818;
+  --foundation--grey-dark: #171717;
+  --foundation--grey-dark-: #121212;
+  --foundation--grey-dark-: #0d0d0d;
+  --foundation--grey-darker: #0b0b0b;
+
+  --font-family: "Lato", sans-serif;
+  --second-family: "K2D", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  scrollbar-width: none;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+picture,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  background-color: var(--foundation--grey-dark);
+}

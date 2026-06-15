@@ -1,0 +1,100 @@
+.services {
+  margin: 0 auto;
+  padding: 5px;
+
+  .container {
+    max-width: 1429px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(5rem, 3.75rem + 6.25vw, 9.375rem);
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.03em;
+      text-align: justify;
+      color: var(--foundation--white-light);
+      margin-bottom: 18px;
+    }
+    .text {
+      font-size: clamp(0.938rem, 0.884rem + 0.27vw, 1.125rem);
+      line-height: 160%;
+      letter-spacing: 0.03em;
+      color: var(--foundation--white-dark-);
+      margin-bottom: clamp(1.5rem, 0.5rem + 5vw, 5rem);
+      text-align: center;
+    }
+
+    .servBlock {
+      max-width: 1429px;
+      width: 100%;
+      padding: 0px clamp(1.5rem, 0.897rem + 3.01vw, 4.375rem) 0px
+        clamp(1.5rem, 0.897rem + 3.01vw, 4.375rem);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+
+      @media (max-width: 839px) {
+        padding: 10px;
+      }
+
+      .box {
+        width: clamp(20rem, 18.589rem + 7.05vw, 24.938rem);
+        height: 350px;
+
+        /* width: 183px;
+height: 202px;  */
+        border-radius: 24px;
+        padding: 39px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 34px;
+        background: rgba(255, 255, 255, 0.04);
+
+        &:nth-of-type(3) {
+          font-size: 10px;
+        }
+
+        .inf {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 24px;
+          transition: 0.5s;
+        
+          &:hover {
+            color: var(--foundation--orange-normal);
+            text-decoration: underline;
+          }
+
+          .img {
+            width: 50px;
+          }
+
+          .subTitle {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            color: var(--foundation--orange-normal);
+
+            /* 
+            &:nth-of-type(1) {
+              font-size: 10px;
+            } */
+          }
+        }
+      }
+    }
+  }
+}
