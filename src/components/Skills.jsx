@@ -34,7 +34,7 @@ const Skills = () => {
             </svg>
             <img
               className={s.img}
-              src="/public/icons/icons8-html5-50.png"
+              src="/icons/icons8-html5-50.png"
               alt="basil_figma"
             />
           </div>
@@ -75,7 +75,7 @@ const Skills = () => {
             </svg>
             <img
               className={s.img}
-              src="/public/icons/icons8-css3-50.png"
+              src="/icons/icons8-css3-50.png"
               alt="basil_figma"
             />
           </div>
@@ -118,7 +118,7 @@ const Skills = () => {
             </svg>
             <img
               className={s.img}
-              src="/public/icons/icons8-javascript-logo-50.png"
+              src="/icons/icons8-javascript-logo-50.png"
               alt="basil_figma"
             />
           </div>
@@ -161,7 +161,7 @@ const Skills = () => {
             </svg>
             <img
               className={s.img}
-              src="/public/icons/icons8-microsoft-excel-50.png"
+              src="/icons/icons8-microsoft-excel-50.png"
               alt="basil_figma"
             />
           </div>
@@ -202,11 +202,7 @@ const Skills = () => {
                 strokeDasharray="313 368"
               />
             </svg>
-            <img
-              className={s.img}
-              src="/public/icons/capcut.png"
-              alt="basil_figma"
-            />
+            <img className={s.img} src="/icons/capcut.png" alt="basil_figma" />
           </div>
           <div className={s.info}>
             <h3 className={s.percents}>85%</h3>
@@ -248,7 +244,7 @@ const Skills = () => {
 
             <img
               className={s.img}
-              src="/public/icons8-canva-100.png"
+              src="/icons8-canva-100.png"
               alt="basil_figma"
             />
           </div>
