@@ -66,13 +66,6 @@ const Hero = () => {
               >
                 <img src="/mingcute_linkedin-line.svg" alt="linkedin" />
               </a>
-              <a
-                target="_blank"
-                className={s.link}
-                href="https://www.canva.com/"
-              >
-                <img src="/icons8-canva-100.png" alt="canva" />
-              </a>
               <a target="_blank" className={s.link} href="https://github.com/">
                 <img src="/icons8-github-logo-64.png" alt="github" />
               </a>

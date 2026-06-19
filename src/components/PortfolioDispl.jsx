@@ -7,7 +7,7 @@ const tabsData = {
   Websites: [
     {
       id: 1,
-      src: "/Beige and Black Minimalist Project Deck Presentation.png",
+      src: "/AeroVision.png",
       href: "https://aero-vision-kappa.vercel.app/",
       name: "AeroVision",
     },
