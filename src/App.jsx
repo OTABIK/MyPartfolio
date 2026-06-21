@@ -39,7 +39,7 @@ const App = () => {
         theme="dark"
       />
 
-      {/* <ScrollUp /> */}
+      <ScrollUp />
     </>
   );
 };
