@@ -1,7 +1,7 @@
 .portfolioDispl {
   margin: 0 auto;
   .container {
-    max-width: 1440px;
+    max-width: 1030px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -11,16 +11,15 @@
     flex-wrap: wrap;
 
     .block {
-      max-width: 931px;
+      max-width: 530px;
       width: 100%;
       display: flex;
       gap: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
+      /* justify-content: center; */
       justify-content: center;
       margin-top: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
       margin-bottom: clamp(2.125rem, 1.482rem + 3.21vw, 4.375rem);
-
-      @media (max-width: 425px) {
-      }
+      /* flex-wrap: wrap; */
 
       @media (max-width: 2000px) {
         display: none;
@@ -32,14 +31,17 @@
 
       .btn {
         border-radius: 8px;
-        padding: clamp(0.625rem, 0.554rem + 0.36vw, 0.875rem)
-          clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+        padding: clamp(0.5rem, 0.393rem + 0.54vw, 0.875rem)
+          clamp(0.938rem, 0.491rem + 2.23vw, 2.5rem);
+        /* padding: clamp(0.625rem, 0.554rem + 0.36vw, 0.875rem)
+          clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem); */
         background: rgba(255, 255, 255, 0.08);
         cursor: pointer;
         transition: 0.5s;
         text-align: center;
         font-weight: 700;
-        font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem);
+        font-size: clamp(0.688rem, 0.598rem + 0.45vw, 1rem);
+        /* font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem); */
         line-height: 160%;
         letter-spacing: 0.03em;
 
@@ -56,9 +58,10 @@
     }
 
     .mySwiper {
-      width: clamp(20.625rem, 8.232rem + 61.96vw, 64rem);
+      width: clamp(18.75rem, 8.036rem + 53.57vw, 56.25rem);
       margin: 0 auto;
       margin-right: 20px;
+      justify-content:;
 
       /* width: 100%;
       display: flex;
@@ -77,6 +80,8 @@
 
       .card {
         /* width: clamp(20.625rem, 8.661rem + 59.82vw, 62.5rem); */
+        max-width: clamp(17.75rem, 12.393rem + 26.79vw, 36.5rem);
+        width: 100%;
         display: flex;
         border-radius: 28px 28px 16px 16px;
         background: rgba(255, 255, 255, 0.08);

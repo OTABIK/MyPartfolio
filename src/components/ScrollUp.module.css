@@ -1,6 +1,6 @@
 .scrollUp {
   position: fixed;
-  right: 30px;
+  right: 40px;
   bottom: 30px;
 
   width: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem);

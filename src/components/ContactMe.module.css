@@ -68,7 +68,9 @@
         }
 
         .inp2 {
-          width: clamp(23.875rem, 21.929rem + 9.73vw, 30.688rem);
+          /* max-width: clamp(23.875rem, 21.929rem + 9.73vw, 30.688rem); */
+
+          width: clamp(21.875rem, 19.909rem + 9.83vw, 31.25rem);
           border-radius: 8px;
           padding: 14px 0 122px 24px;
           background: rgba(255, 255, 255, 0.04);
